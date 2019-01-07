@@ -36,9 +36,8 @@ export default {
   methods: {
     _setSliderWidth() {
       this.childern = this.$refs.sliderGroup.children
-
       let width = 0
-      let sliderWidth = this.$refs.clientWidth
+      let sliderWidth = this.$refs.slider.clientWidth
       for (let i = 0; i < this.childern.length; i++) {
         let child = this.childern[i]
         addClass(child, 'slider-item')
